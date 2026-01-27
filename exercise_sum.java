@@ -12,15 +12,15 @@ public class exercise_sum {
 
         Scanner reader = new Scanner(System.in);
 
-        System.out.println("Introduce el primer numero");
+        System.out.println("Introduce el primer numero:");
         numero1 = reader.nextInt();
 
-        System.out.println("Introduce el segundo numero");
+        System.out.println("Introduce el segundo numero:");
         numero2 = reader.nextInt();
 
         resultado = numero1 + numero2;
 
-        System.out.println("La suma es " + numero1 + " + " + numero2 + " = " + resultado + "");
+        System.out.println("La suma es: " + numero1 + " + " + numero2 + " = " + resultado + "");
 
         reader.close();
     }
