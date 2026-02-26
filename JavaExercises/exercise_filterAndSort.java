@@ -1,3 +1,4 @@
+package JavaExercises;
 /**
  * Let's play with strings
  *
@@ -15,10 +16,8 @@
  * 4) No restrictions on the amount/names of private methods you can create within the class, as long as names are descriptive or JDoc is included
  *
  */
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.jar.Attributes.Name;
 import java.util.stream.Collectors;
 
 public class exercise_filterAndSort {
@@ -30,7 +29,7 @@ public class exercise_filterAndSort {
      */
 
 public static void main(String args[]) {
-        String[] testStrings = { "Bernard", "Charlie", "Angie", "Andy", "Bertha", "Annie", "Carl", "Dennis", "Caroline", "Bob", "Betty", "Bart", "Albert" };
+        String[] testStrings = { "Bernard", "Charlie", "Angie", "Andy", "Bertha", "Annie", "Carl", "Dennis", "Caroline", "Bob", "Betty", "Bart", "Albert", "Connie", "Ale"};
         System.out.println("Let's begin...");
 
         List<String> names = Arrays.asList(testStrings);
@@ -39,7 +38,7 @@ public static void main(String args[]) {
 
         System.out.println(
                 "Sorted & filtered names with A larger than 4 characters: " +
-                filterAndSort(names, 'A', 5)
+                filterAndSort(names, 'A', 4)
         );
 
         System.out.println(
@@ -68,7 +67,7 @@ private static List<String> filterAndSort(List<String> names, char initial, int 
  * EXPECTED OUTPUT WHEN MAIN IS EXECUTED:
  * ======================================
  * Original collection: [Bernard, Charlie, Angie, Andy, Bertha, Annie, Carl, Connie, Caroline, Bob, Betty, Bart, Albert]
- * Sorted & filtered names with A larger than 4 characters: [Albert, Angie, Annie]
+ * Sorted & filtered names with A larger than 4 characters: [Albert, Angie, Annie, Andy]
  * Sorted & filtered names with B equal or larger than 3 characters: [Bart, Bernard, Bertha, Betty, Bob]
  * Sorted & filtered names with C equal or larger than 5 characters: [Caroline, Charlie, Connie]
  */
