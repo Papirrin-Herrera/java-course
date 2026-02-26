@@ -1,14 +1,4 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
 class Result {
 
@@ -25,17 +15,17 @@ class Result {
             
             //match with 3 and 5
             if(i % 3 == 0 && i % 5 == 0) {
-                 System.out.println("FizzBuzz");
+                System.out.println("FizzBuzz");
             }
             
             //match with 3
             if(i % 3 == 0 && !(i % 5 == 0)) {
-                 System.out.println("Fizz");
+                System.out.println("Fizz");
             }
             
             //match with 5
             if(!(i % 3 == 0) && i % 5 == 0) {
-                 System.out.println("Buzz");
+                System.out.println("Buzz");
             }
             
             //match with 3 and 5
