@@ -1,6 +1,6 @@
 package JavaCourse;
 
-public class while_loops {
+public class while_loop_with_numbers {
     public static void main(String[] args) {
 
     int i = 5;   // Set the initial value
